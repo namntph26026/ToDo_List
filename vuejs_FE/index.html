@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://unpkg.com/swiper@10.1.0/swiper-bundle.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/87e7203cf2.js"
+      crossorigin="anonymous"
+    ></script>
+
+
+    <script src="https://kit.fontawesome.com/87e7203cf2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <title>Vite + Vue</title>
+ 
+  </head>
+  <body>
+    <div id="app"></div>
+    
+
+    <script src="https://unpkg.com/swiper@10.1.0/swiper-bundle.min.js"></script>
+    <script>
+      var mainSwiper = new Swiper(".main-swiper", {
+        direction: "vertical",
+        slidesPerView: "auto",
+        mousewheel: true,
+        scrollbar: {
+          el: ".swiper-scrollbar",
+        },
+      });
+
+      var subSwiper = new Swiper(".sub-swiper", {
+        direction: "vertical",
+        slidesPerView: "auto",
+        mousewheel: true,
+        scrollbar: {
+          el: ".swiper-scrollbar",
+        },
+      });
+
+      mainSwiper.controller.control = subSwiper;
+      subSwiper.controller.control = mainSwiper;
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script type="module" src="/src/main.js"></script>
+</html>
